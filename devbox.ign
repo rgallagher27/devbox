@@ -1,0 +1,30 @@
+{
+  "ignition": {
+    "version": "3.0.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "sudo",
+          "docker"
+        ],
+        "name": "core",
+        "sshAuthorizedKeys": [
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCoL+8mFIaZM9Z85SJh1eWG7M0nnZx13/a+eOa5P6GPQ7b5WAYW0SFlp+ajL4efyyHZI+68brKPwdOAbG+6ue4zyxxvjYVe76MgT+zv2+jHnjkb7Ertn4SMXylamT6yhLc/uxZdNRuuXdEKReOFpCaT4wEWHz8Io3bCVXbYxWKLVXMCIoP4Q458H443OOw9c1JxCEJid5JtR4LS1XEw/uG8hqbzppLnXmTiMPPdVN9UE1O87X+RbGuTWkFgrgm7hQ353zo9+QWcdF1/itUwbX4aTyBMLmUuXA4YEwMhDZkIV9Gig2Uya69crm939u1rjE8nm8TzpnYJy0a1Es8XeZFxmbBe+GolvWErigWYol9RsaNvQ0b9NxeAY9wkhh1MBACfwSrq/I5IBWqcmGVPR87b8wE7omyahKz59PPq9Ni3ggM+cH6X/9j49dkBb8uaU0rRwnZmkWbxtAi3gOVAfyZBdVlp9ftY5U/z7G7T+fTMIdzv/8uCif9mC88Fq6Dnaj2C8wX+P2nrIcrZSt76/EZC+DksexhDjxECI8wwgnvhdsVICFQwsA+R+dHN/HzvrK86sw/uzLQ1lAtfkzXw8IeyVtf9BaKoif95/B//+ffWXk4hhuzaT9yFB/XDwA7Z2v2U/YA/4dkp5sDR+q/3JXUpnkmScgSVDsQMeDWcvN7AuQ== ross@miniz.co"
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "overwrite": true,
+        "path": "/etc/hostname",
+        "contents": {
+          "source": "data:,miniz-devbox"
+        }
+      }
+    ]
+  }
+}
