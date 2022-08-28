@@ -17,10 +17,17 @@
     ]
   },
   "storage": {
-    "directories": [
+    "disks": [
       {
-        "overwrite": false,
-        "path": "/var/home/core/development"
+        "device": "/dev/vdb",
+        "partitions": [
+          {
+            "label": "development",
+            "sizeMiB": 0,
+            "startMiB": 0
+          }
+        ],
+        "wipeTable": false
       }
     ],
     "files": [
@@ -37,6 +44,13 @@
         "contents": {
           "source": "data:,export%20EDITOR%3Dvim%0A"
         }
+      }
+    ],
+    "filesystems": [
+      {
+        "device": "/dev/disk/by-partlabel/development",
+        "format": "ext4",
+        "path": "/var/development"
       }
     ]
   },
